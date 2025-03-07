@@ -2,7 +2,8 @@
 import React, { useEffect, useRef } from 'react';
 
 const About = () => {
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const experienceRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -21,9 +22,16 @@ const About = () => {
       observer.observe(sectionRef.current);
     }
 
+    if (experienceRef.current) {
+      observer.observe(experienceRef.current);
+    }
+
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
+      }
+      if (experienceRef.current) {
+        observer.unobserve(experienceRef.current);
       }
     };
   }, []);
@@ -50,7 +58,7 @@ const About = () => {
               excited to tackle new challenges and collaborate on innovative projects.
             </p>
           </div>
-          <div className="bg-portfolio-lightGray rounded-xl p-8 reveal" ref={sectionRef}>
+          <div className="bg-portfolio-lightGray rounded-xl p-8 reveal" ref={experienceRef}>
             <h3 className="text-2xl font-bold mb-6 text-portfolio-darkBlue">Education & Experience</h3>
             
             <div className="mb-6">
