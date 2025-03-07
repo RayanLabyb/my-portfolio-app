@@ -36,15 +36,15 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description: "A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include user authentication, product search, shopping cart, and payment processing.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80",
-      tags: ["React", "Node.js", "MongoDB", "Express", "Redux"],
+      tags: ["React", "Node.js", "MongoDB", "Express"],
       github: "https://github.com",
       live: "https://example.com"
     },
     {
       title: "AI Content Generator",
-      description: "An AI-powered application that generates content for blogs, social media, and marketing materials. Integrates with OpenAI's GPT-3 and has a user-friendly interface.",
+      description: "An AI-powered application that generates content for blogs, social media, and marketing materials. Integrates with Deepseek API and has a user-friendly interface.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80",
-      tags: ["Next.js", "TypeScript", "OpenAI API", "Tailwind CSS"],
+      tags: ["Next.js", "TypeScript", "Deepseek API", "Tailwind CSS"],
       github: "https://github.com",
       live: "https://example.com"
     },

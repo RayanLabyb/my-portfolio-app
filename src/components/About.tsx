@@ -44,7 +44,7 @@ const About = () => {
             <h2 className="section-title">About Me</h2>
             <p className="text-lg mb-6">
               I'm a passionate software engineer with a strong foundation in web development. 
-              With 5+ years of experience, I specialize in building high-quality applications 
+              With 2+ years of experience, I specialize in building high-quality applications 
               that deliver exceptional user experiences.
             </p>
             <p className="text-lg mb-6">
@@ -59,30 +59,30 @@ const About = () => {
             </p>
           </div>
           <div className="bg-portfolio-lightGray rounded-xl p-8 reveal" ref={experienceRef}>
-            <h3 className="text-2xl font-bold mb-6 text-portfolio-darkBlue">Education & Experience</h3>
+            <h3 className="text-2xl font-bold mb-6 text-portfolio-darkBlue">Experience</h3>
             
             <div className="mb-6">
               <div className="flex justify-between items-center mb-2">
-                <h4 className="font-semibold text-lg">Google</h4>
-                <span className="text-sm text-portfolio-gray">2020 - Present</span>
+                <h4 className="font-semibold text-lg">Written my first line of code</h4>
+                <span className="text-sm text-portfolio-gray">2021 - 2022</span>
               </div>
-              <p className="text-portfolio-darkBlue">Senior Software Engineer</p>
+              <p className="text-portfolio-darkBlue">I wrote my first line of code in Python</p>
             </div>
             
             <div className="mb-6">
               <div className="flex justify-between items-center mb-2">
-                <h4 className="font-semibold text-lg">Amazon</h4>
-                <span className="text-sm text-portfolio-gray">2018 - 2020</span>
+                <h4 className="font-semibold text-lg">Created a first GitHub account</h4>
+                <span className="text-sm text-portfolio-gray">2021 - 2022</span>
               </div>
-              <p className="text-portfolio-darkBlue">Software Development Engineer</p>
+              <p className="text-portfolio-darkBlue">Created my first GitHub profile</p>
             </div>
             
             <div>
               <div className="flex justify-between items-center mb-2">
-                <h4 className="font-semibold text-lg">Stanford University</h4>
-                <span className="text-sm text-portfolio-gray">2014 - 2018</span>
+                <h4 className="font-semibold text-lg">HTML/CSS/REACT</h4>
+                <span className="text-sm text-portfolio-gray">2023 - 2024</span>
               </div>
-              <p className="text-portfolio-darkBlue">B.S. in Computer Science</p>
+              <p className="text-portfolio-darkBlue">Learned HTML/CSS/REACT</p>
             </div>
           </div>
         </div>

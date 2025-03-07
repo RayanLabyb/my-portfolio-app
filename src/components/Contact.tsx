@@ -64,20 +64,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      link: "mailto:your.email@example.com"
+      value: "rayan.the.programmer@gmail.com",
+      link: "mailto:rayan.the.programmer@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "(123) 456-7890",
-      link: "tel:+11234567890"
+      value: "+212672504422",
+      link: "tel:+212672504422"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
-      link: "https://maps.google.com/?q=San+Francisco"
+      value: "Ouled Teima, Morocco",
+      link: "https://maps.google.com/?q=Ouled+Teima+Morocco"
     }
   ];
 
