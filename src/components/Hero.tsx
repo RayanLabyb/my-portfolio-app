@@ -11,18 +11,11 @@ const Hero = () => {
     }
   };
 
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToResume = () => {
+    const resumeSection = document.getElementById('resume');
+    if (resumeSection) {
+      resumeSection.scrollIntoView({ behavior: 'smooth' });
     }
-  };
-
-  const openResume = () => {
-    // Since we don't have a real resume file yet, we'll create a simple alert
-    // In a real application, you would replace this with a link to your actual resume
-    alert("Resume functionality: This would download or open your resume PDF");
-    // Alternatively: window.open('/resume.pdf', '_blank');
   };
 
   return (
@@ -48,11 +41,11 @@ const Hero = () => {
                 View Projects
               </Button>
               <Button 
-                onClick={openResume}
+                onClick={scrollToResume}
                 variant="outline" 
                 className="border-portfolio-blue text-portfolio-blue hover:bg-portfolio-blue hover:text-white"
               >
-                Download Resume
+                View Resume
               </Button>
             </div>
           </div>

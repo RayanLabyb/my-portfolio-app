@@ -28,13 +28,6 @@ const Header = () => {
     }
   };
   
-  const openResume = () => {
-    // Since we don't have a real resume file yet, we'll create a simple alert
-    // In a real application, you would replace this with a link to your actual resume
-    alert("Resume functionality: This would download or open your resume PDF");
-    // Alternatively: window.open('/resume.pdf', '_blank');
-  };
-
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
@@ -42,7 +35,7 @@ const Header = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          {['home', 'about', 'skills', 'projects', 'contact'].map((item) => (
+          {['home', 'about', 'skills', 'projects', 'resume', 'contact'].map((item) => (
             <button 
               key={item}
               onClick={() => scrollToSection(item)} 
@@ -51,12 +44,6 @@ const Header = () => {
               {item}
             </button>
           ))}
-          <Button 
-            onClick={openResume}
-            className="bg-portfolio-blue hover:bg-blue-600 text-white"
-          >
-            Resume
-          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -72,7 +59,7 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 animate-fade-in">
           <nav className="flex flex-col space-y-4 px-6">
-            {['home', 'about', 'skills', 'projects', 'contact'].map((item) => (
+            {['home', 'about', 'skills', 'projects', 'resume', 'contact'].map((item) => (
               <button 
                 key={item}
                 onClick={() => scrollToSection(item)} 
@@ -81,12 +68,6 @@ const Header = () => {
                 {item}
               </button>
             ))}
-            <Button 
-              onClick={openResume}
-              className="bg-portfolio-blue hover:bg-blue-600 text-white w-full"
-            >
-              Resume
-            </Button>
           </nav>
         </div>
       )}
