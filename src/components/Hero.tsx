@@ -18,6 +18,13 @@ const Hero = () => {
     }
   };
 
+  const openResume = () => {
+    // Since we don't have a real resume file yet, we'll create a simple alert
+    // In a real application, you would replace this with a link to your actual resume
+    alert("Resume functionality: This would download or open your resume PDF");
+    // Alternatively: window.open('/resume.pdf', '_blank');
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center pt-16 bg-portfolio-lightBlue">
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
@@ -25,7 +32,7 @@ const Hero = () => {
           <div className="order-2 md:order-1">
             <p className="text-portfolio-blue font-semibold mb-2">Hello, I'm</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-portfolio-darkBlue mb-4">
-              Your Name
+              Rayan Labyb
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium text-portfolio-gray mb-6">
               Software Engineer
@@ -41,11 +48,11 @@ const Hero = () => {
                 View Projects
               </Button>
               <Button 
-                onClick={scrollToContact}
+                onClick={openResume}
                 variant="outline" 
                 className="border-portfolio-blue text-portfolio-blue hover:bg-portfolio-blue hover:text-white"
               >
-                Contact Me
+                Download Resume
               </Button>
             </div>
           </div>

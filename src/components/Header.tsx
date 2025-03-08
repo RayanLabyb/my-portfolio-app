@@ -27,11 +27,18 @@ const Header = () => {
       setMobileMenuOpen(false);
     }
   };
+  
+  const openResume = () => {
+    // Since we don't have a real resume file yet, we'll create a simple alert
+    // In a real application, you would replace this with a link to your actual resume
+    alert("Resume functionality: This would download or open your resume PDF");
+    // Alternatively: window.open('/resume.pdf', '_blank');
+  };
 
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <a href="#" className="text-xl font-bold text-portfolio-darkBlue">Portfolio</a>
+        <a href="#" className="text-xl font-bold text-portfolio-darkBlue">Rayan Labyb</a>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
@@ -45,7 +52,7 @@ const Header = () => {
             </button>
           ))}
           <Button 
-            onClick={() => window.open('/resume.pdf', '_blank')}
+            onClick={openResume}
             className="bg-portfolio-blue hover:bg-blue-600 text-white"
           >
             Resume
@@ -75,7 +82,7 @@ const Header = () => {
               </button>
             ))}
             <Button 
-              onClick={() => window.open('/resume.pdf', '_blank')}
+              onClick={openResume}
               className="bg-portfolio-blue hover:bg-blue-600 text-white w-full"
             >
               Resume
