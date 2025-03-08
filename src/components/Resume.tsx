@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Download } from 'lucide-react';
+import { Download, MapPin, Mail, Phone } from 'lucide-react';
 import { jsPDF } from "jspdf";
 
 const Resume = () => {
@@ -22,10 +22,10 @@ const Resume = () => {
     doc.setTextColor(142, 145, 150); // Gray color
     doc.text("Software Engineer", 105, 28, { align: "center" });
     
-    // Add contact info
-    doc.text("📍 Ouled Teima, Morocco", 105, 40, { align: "center" });
-    doc.text("📧 rayan.the.programmer@gmail.com", 105, 48, { align: "center" });
-    doc.text("📱 +212672504422", 105, 56, { align: "center" });
+    // Add contact info - Using text instead of emoji to avoid encoding issues
+    doc.text("Location: Ouled Teima, Morocco", 105, 40, { align: "center" });
+    doc.text("Email: rayan.the.programmer@gmail.com", 105, 48, { align: "center" });
+    doc.text("Phone: +212672504422", 105, 56, { align: "center" });
     
     // Add a separator line
     doc.setDrawColor(220, 220, 220);
@@ -154,9 +154,15 @@ const Resume = () => {
             <h1 className="text-3xl font-bold text-portfolio-darkBlue">Rayan Labyb</h1>
             <p className="text-lg text-portfolio-gray mt-2">Software Engineer</p>
             <div className="flex flex-wrap justify-center gap-4 mt-4 text-sm text-portfolio-gray">
-              <span>📍 Ouled Teima, Morocco</span>
-              <span>📧 rayan.the.programmer@gmail.com</span>
-              <span>📱 +212672504422</span>
+              <span className="flex items-center gap-1">
+                <MapPin size={14} className="text-portfolio-blue" /> Ouled Teima, Morocco
+              </span>
+              <span className="flex items-center gap-1">
+                <Mail size={14} className="text-portfolio-blue" /> rayan.the.programmer@gmail.com
+              </span>
+              <span className="flex items-center gap-1">
+                <Phone size={14} className="text-portfolio-blue" /> +212672504422
+              </span>
             </div>
           </div>
           
